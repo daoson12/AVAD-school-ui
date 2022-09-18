@@ -1,0 +1,30 @@
+.welcome{
+  background-color: #2d2b6d;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  border: 1px solid #ECEDF1;
+  justify-content: space-between;
+  gap: 3rem;
+  color: #fff;
+}
+.chart{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  border: 1px solid #ECEDF1;
+}
+
+.budget{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  border: 1px solid #ECEDF1;
+
+}
+.news{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  border: 1px solid #ECEDF1;
+
+}
