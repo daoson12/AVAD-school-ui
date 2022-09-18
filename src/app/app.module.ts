@@ -1,3 +1,4 @@
+import { HomeComponent } from './layouts/home/home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,7 +19,8 @@ import { PageNotFoundComponent } from './security/page-not-found/page-not-found.
     SidebarComponent,
     SignInComponent,
     SignUpComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
