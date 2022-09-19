@@ -8,7 +8,7 @@ import { HomeComponent } from './layouts/home/home.component';
 
 const routes: Routes = [
   {path:'', component:SignInComponent},
-  {path:'register', component:SignUpComponent},
+  {path:'sign-up', component:SignUpComponent},
 
 {
   path: 'home',

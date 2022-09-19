@@ -1,53 +1,106 @@
-<main>
-  <div class="container">
-     <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
-        <div class="container">
-           <div class="row justify-content-center">
-              <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
-                 <div class="d-flex justify-content-center py-4"> <a routerLink="/" class="logo d-flex align-items-center w-auto"> <img src="assets/img/logo.png" alt=""> <span class="d-none d-lg-block">Admin</span> </a></div>
-                 <div class="card mb-3">
-                    <div class="card-body">
-                       <div class="pt-4 pb-2">
-                          <h5 class="card-title text-center pb-0 fs-4">Create an Account</h5>
-                          <p class="text-center small">Enter your personal details to create account</p>
-                       </div>
-                       <form class="row g-3 needs-validation" novalidate>
-                          <div class="col-12">
-                             <label for="yourName" class="form-label">Your Name</label> <input type="text" name="name" class="form-control" id="yourName" required>
-                             <div class="invalid-feedback">Please, enter your name!</div>
-                          </div>
-                          <div class="col-12">
-                             <label for="yourEmail" class="form-label">Your Email</label> <input type="email" name="email" class="form-control" id="yourEmail" required>
-                             <div class="invalid-feedback">Please enter a valid Email adddress!</div>
-                          </div>
-                          <div class="col-12">
-                             <label for="yourUsername" class="form-label">Username</label>
-                             <div class="input-group has-validation">
-                                <span class="input-group-text" id="inputGroupPrepend">@</span> <input type="text" name="username" class="form-control" id="yourUsername" required>
-                                <div class="invalid-feedback">Please choose a username.</div>
-                             </div>
-                          </div>
-                          <div class="col-12">
-                             <label for="yourPassword" class="form-label">Password</label> <input type="password" name="password" class="form-control" id="yourPassword" required>
-                             <div class="invalid-feedback">Please enter your password!</div>
-                          </div>
-                          <div class="col-12">
-                             <div class="form-check">
-                                <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required> <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
-                                <div class="invalid-feedback">You must agree before submitting.</div>
-                             </div>
-                          </div>
-                          <div class="col-12"> <button class="btn btn-primary w-100" type="submit">Create Account</button></div>
-                          <div class="col-12">
-                             <p class="small mb-0">Already have an account? <a (click)="login()">Log in</a></p>
-                          </div>
-                       </form>
-                    </div>
-                 </div>
-                 <div class="credits"> Loved by <a href="https://freeetemplates.com/">FreeeTemplates</a></div>
+
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <div class="login100-form">
+          <form class="row g-3">
+            <div class="px-30 py-10 text-left">
+              <a class="link-effect font-w700" style="color: #df7829">
+                <span class="font-size-xl font-size-lg">AVAD</span
+                ><span class="font-size-xl">School</span>
+              </a>
+              <h1 class="h3 font-w700 mt-30 mb-10">
+                Welcome to Your Dashboard
+              </h1>
+              <h2 class="h5 font-w400 text-muted mb-4">Please sign in</h2>
+            </div>
+            <div class="col-6" style="padding: 2px">
+              <label for="inputEmail4" class="form-label">First Name</label>
+              <input type="email" class="form-control form-control-lg" />
+            </div>
+            <div class="col-6" style="padding: 2px">
+              <label class="form-label">Surname</label>
+              <input type="text" class="form-control form-control-lg"/>
+            </div>
+
+            <div class="col-12 mb-2">
+              <label class="form-label">Other Names</label>
+              <input type="text" class="form-control form-control-lg" />
+            </div>
+            <div class="col-12 mb-2">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-control form-control-lg" />
+            </div>
+            <div class="col-12" style="padding: 2px">
+              <label for="inputEmail4" class="form-label">Residential Address</label>
+              <input type="text" class="form-control form-control-lg" />
+            </div>
+            <div class="col-12" style="padding: 2px">
+              <label class="form-label">Phone Number</label>
+              <input type="text" class="form-control form-control-lg"/>
+            </div>
+            <div class="col-6" style="padding: 2px">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control form-control-lg" />
+            </div>
+            <div class="col-6" style="padding: 2px">
+              <label class="form-label">Confirm Password</label>
+              <input type="password" class="form-control form-control-lg"/>
+            </div>
+
+            <div class="col-auto mb-1">
+              <div class="form-check">
+                <input
+                  class="form-check-input mt-1 mx-auto"
+                  type="checkbox"
+                  id="autoSizingCheck"
+                />
+                <label class="form-check-label" for="autoSizingCheck">
+                  Remember me
+                </label>
               </div>
-           </div>
+            </div>
+
+            <div class="form-btn col-2">
+              <button class="btn prim_btn clickable" (click)="login()">
+                <span>Login</span>
+              </button>
+            </div>
+
+            <div style="margin-top: 1.5rem" class="auth_content_extra">
+              <p class="login">
+                Don’t have an account?
+                <span
+                  routerLink="/sign-up"
+                  class="text-primary-color body-1-bold clickable"
+                  tabindex="0"
+                >
+                  Sign Up</span
+                >
+              </p>
+            </div>
+          </form>
         </div>
-     </section>
+
+        <div
+          class="login100-more details"
+          style="background-image: url('assets/images/bgauth.jpg')"
+        >
+          <div class="contan">
+            <h2
+              style="font-weight: 400; font-size: 50px; margin-top: 100px"
+              class="title"
+            >
+              Welcome to a World of Potentials!
+            </h2>
+            <p style="font-weight: 400; font-size: 20px">
+              Join over 500 parents who have depended on us to help their
+              children discover and develop their potentials at a very early
+              age.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</main>
+

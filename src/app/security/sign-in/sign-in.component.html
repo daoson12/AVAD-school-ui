@@ -1,3 +1,4 @@
+
 <!-- <main>
   <div class="container-fuild">
     <section class="section register min-vh-100">
@@ -54,16 +55,17 @@
   </div>
 </main> -->
 
+
 <div class="limiter">
   <div class="container-login100">
     <div class="wrap-login100">
       <form class="login100-form validate-form row g-3">
-        <div class="px-30 py-10 text-center">
-          <a class="link-effect font-w700">
-              <span class="font-size-xl text-primary-dark">AVAD</span><span class="font-size-xl">School</span>
+        <div class="px-30 py-10 text-left">
+          <a class="link-effect font-w700" style="color: #df7829;">
+              <span class="font-size-xl font-size-lg">AVAD</span><span class="font-size-xl">School</span>
           </a>
           <h1 class="h3 font-w700 mt-30 mb-10">Welcome to Your Dashboard</h1>
-          <h2 class="h5 font-w400 text-muted mb-0">Please sign in</h2>
+          <h2 class="h5 font-w400 text-muted mb-4">Please sign in</h2>
       </div>
         <div class="col-12 mb-2">
           <label class="form-label">Username</label>
@@ -87,14 +89,14 @@
         </div>
 
         <div  class="form-btn col-2">
-          <button class="btn prim_btn clickable">
+          <button class="btn prim_btn clickable" (click)="login()">
             <span>Login</span>
           </button>
         </div>
 
         <div  style="margin-top: 1.5rem;" class="auth_content_extra">
           <p  class="login"> Don’t have an account?
-            <span routerlink="/sign-up" class="text-primary-color body-1-bold clickable" tabindex="0">
+            <span routerLink="/sign-up" class="text-primary-color body-1-bold clickable" tabindex="0">
               Sign Up</span></p>
         </div>
 
