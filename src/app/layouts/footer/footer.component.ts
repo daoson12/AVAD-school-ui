@@ -7,16 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+
+  company="AVAD School"
   constructor() { }
 
   ngOnInit(): void {
   }
   scrollTop()
   {
-    window.scroll({ 
-      top: 0, 
-      left: 0, 
-      behavior: 'smooth' 
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
 });
 
   }
